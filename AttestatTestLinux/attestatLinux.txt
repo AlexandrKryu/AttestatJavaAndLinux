@@ -1,0 +1,112 @@
+1)   Используйте команды операционной системы Linux и создайте две новых директории – «Игрушки для школьников» и «Игрушки для дошколят»
+
+alexkkryu@AkA-pc:~/certificat_Linux
+$ mkdir kindergarten pupils
+alexkkryu@AkA-pc:~/certificat_Linux
+$ tree
+.
+├── kindergarten
+└── pupils
+
+
+2)   Создайте в директории «Игрушки для школьников» текстовые файлы - «Роботы», «Конструктор», «Настольные игры»
+
+alexkkryu@AkA-pc:~/certificat_Linux
+$ cd pupils/
+alexkkryu@AkA-pc:~/certificat_Linux/pupils
+$ touch robots.txt construcor.txt board_games.txt
+
+alexkkryu@AkA-pc:~/certificat_Linux/pupils
+$ cd ..
+alexkkryu@AkA-pc:~/certificat_Linux
+$ tree 
+.
+├── kindergarten
+└── pupils
+    ├── board_games.txt
+    ├── construcor.txt
+ 
+3)    Создайте в директории «Игрушки для дошколят» текстовые файлы «Мягкие игрушки», «Куклы», «Машинки»
+
+
+alexkkryu@AkA-pc:~/certificat_Linux
+$ cd kindergarten/
+alexkkryu@AkA-pc:~/certificat_Linux/kindergarten
+$ touch Stuffed_Toys.txt dolls.txt cars.txt
+
+alexkkryu@AkA-pc:~/certificat_Linux/kindergarten
+$ cd ..
+alexkkryu@AkA-pc:~/certificat_Linux
+$ tree
+.
+├── kindergarten
+│   ├── cars.txt
+│   ├── dolls.txt
+│   └── Stuffed_Toys.txt
+└── pupils
+    ├── board_games.txt
+    ├── construcor.txt
+    └── robots.txt
+
+2 directories, 6 files
+
+4)   Объединить 2 директории в одну «Имя Игрушки»
+
+alexkkryu@AkA-pc:~/certificat_Linux
+$ mkdir toy_name && mv kindergarten/ pupils/ toy_name/
+
+alexkkryu@AkA-pc:~/certificat_Linux
+$ tree 
+.
+└── toy_name
+    ├── kindergarten
+    │   ├── cars.txt
+    │   ├── dolls.txt
+    │   └── Stuffed_Toys.txt
+    └── pupils
+        ├── board_games.txt
+        ├── construcor.txt
+        └── robots.txt
+
+5)   Переименовать директорию «Имя Игрушки» в «Игрушки»
+
+alexkkryu@AkA-pc:~/certificat_Linux
+$ mv toy_name/ toys/
+
+alexkkryu@AkA-pc:~/certificat_Linux
+$ ls
+toys
+alexkkryu@AkA-pc:~/certificat_Linux
+$ tree 
+.
+└── toys
+    ├── kindergarten
+    │   ├── cars.txt
+    │   ├── dolls.txt
+    │   └── Stuffed_Toys.txt
+    └── pupils
+        ├── board_games.txt
+        ├── construcor.txt
+        └── robots.txt
+
+
+6)   Просмотреть содержимое каталога «Игрушки».
+
+смотрите выше ;)
+
+
+7)   Установить и удалить snap-пакет. (Любой, какой хотите)
+
+alexkkryu@AkA-pc:~/certificat_Linux
+$ sudo snap install xonotic
+
+пропуск всего спама при установкиююю ;)
+
+Snapcrafters установлен
+
+
+8)   Добавить произвольную задачу для выполнения каждые 3 минуты (Например, 
+запись в текстовый файл чего-то или копирование из каталога А в каталог Б).
+
+alexkkryu@AkA-pc:~/certificat_Linux
+$  */3, *, *, *, *  sudo su echo "Privet" >> /home/test_cron

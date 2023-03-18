@@ -6,7 +6,7 @@ import java.util.Queue;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void Main(String[] args) {
         Toys<Toy> toys = new Toys<>();
         Queue<Toy> queue = new PriorityQueue<>(Collections.reverseOrder());
         Save save = new Save();
